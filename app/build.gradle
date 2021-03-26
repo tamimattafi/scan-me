@@ -65,6 +65,10 @@ dependencies {
     //Tools
     implementation "com.budiyev.android:code-scanner:2.1.0"
 
+    //Data
+    implementation project(":domain")
+    implementation project(":data")
+
     //Testing
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
