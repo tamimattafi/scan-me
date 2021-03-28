@@ -1,10 +1,10 @@
-package com.attafitamim.scanner.domain.collection
+package com.attafitamim.scanner.domain.entries
 
-class Event(
+class EventEntry(
     override val id: Int,
     override val creationDate: Long,
     val name: String,
     val description: String,
-    val address: Address,
+    val address: AddressEntry,
     val time: Long
-) : Item
+) : UserEntry
