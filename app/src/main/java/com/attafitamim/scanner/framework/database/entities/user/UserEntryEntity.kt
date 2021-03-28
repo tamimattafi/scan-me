@@ -1,5 +1,6 @@
 package com.attafitamim.scanner.framework.database.entities.user
 
+import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.attafitamim.scanner.framework.database.entities.common.AddressEntity
@@ -14,7 +15,7 @@ data class UserEntryEntity(
     //Common columns
     val name: String,
     val description: String,
-    val address: AddressEntity,
+    @Embedded val address: AddressEntity,
     //Website entry columns
     val url: String,
     //Text entry columns
